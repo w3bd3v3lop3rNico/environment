@@ -1,0 +1,13 @@
+# Secrets / local config
+.env
+**/.env
+!**/.env.example
+
+# Node
+node_modules/
+dist/
+npm-debug.log*
+
+# Logs & OS
+*.log
+.DS_Store

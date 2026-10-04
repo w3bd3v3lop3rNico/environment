@@ -1,0 +1,10 @@
+# Root orchestration: pulls each module in as part of a single project.
+# Every module stays runnable on its own from its directory.
+#
+#   docker compose up -d --build
+#
+include:
+  - path: database/compose.yaml
+    env_file: .env
+  - path: test-app/compose.yaml
+    env_file: .env
